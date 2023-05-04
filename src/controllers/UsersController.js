@@ -1,4 +1,4 @@
-const {hash} = require('bcryptjs');
+const {hash, compare} = require('bcryptjs');
 const knex = require('../database/knex');
 const AppError = require('../utils/AppError')
 
@@ -30,7 +30,7 @@ class UsersController{
         }
 
     async update(request, response){
-        const {name, email} = request.body;
+        const {name, email, password, old_password} = request.body;
         const {id} = request.params;
 
         const user = await knex('users').select('*').where('id', id).first();
@@ -44,11 +44,25 @@ class UsersController{
         if(userWithUpdateEamil && userWithUpdateEamil.id !== user.id){
             throw new AppError('This email is already in use!')
         }
-        
-        user.name = name;
-        user.email = email;
 
-        await knex('users').where({id}).update({name: name , email: email})
+       // user.name = name ?? user.name;
+       // user.email = email ?? user.email;
+
+        if(password && !old_password){
+            throw new AppError('Enter current password!')
+        }
+
+        if(password && old_password){
+            const checkOldPassword = await compare(old_password, user.password)
+
+            if(!checkOldPassword){
+                throw new AppError('Current password is incorrect!')
+            }
+
+            user.password = await hash(password, 8)
+        }
+        
+        await knex('users').where({id}).update({name: name , email: email, password: user.password})
 
         response.json()
             
