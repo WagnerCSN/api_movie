@@ -7,7 +7,7 @@ module.exports = {
     },
 
     pool:{
-      afterCreate: (conn, cb) => conn.run("PRAGMA foreign_key = ON", cb) //function to ONDELETE="CASCADE"
+      afterCreate: (conn, cb) => conn.run("PRAGMA foreign_keys = ON", cb) //function to ONDELETE="CASCADE"
     },
 
     migrations: {
