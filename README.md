@@ -36,7 +36,7 @@ API Movie is a communication interface that offers access to its functions by ot
 
 ## :arrow_forward: Deploy  
 
-![SPAUniverse](https://user-images.githubusercontent.com/119871984/231864443-7000f196-15f6-4974-823c-d1848dde4172.gif)
+
 
 
 ## How to run the application  
@@ -63,12 +63,9 @@ npm install bcryptjs --save
 ```
 npm install knex --save
 ```
-
-
 To open and run the project:
 
-npm run dev
-.<br/><br/>
+npm run dev.<br/><br/>
 
 ## Technologies 
 
@@ -91,6 +88,6 @@ npm run dev
 
 ## License 
 
-Copyright : 2023 - SpaceCream
+Copyright : 2023 - API Movie
 
 Made with ❤️ by Wagner Costa
