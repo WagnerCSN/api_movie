@@ -72,11 +72,17 @@ npm run dev
 
 ## Technologies 
 
-- SPA concepts;
+- Express;
 - Route mapping;
-- Asynchronous and promises;
-- Object orientation;
-- Classes and much more.<br/><br/>
+- Route params and query params;
+- Nodemon;
+- Insomnia;
+- Controller;
+- HTTP CODES;
+- Middlewares;
+- Migrations;
+- Query Builder;
+- Knex...; <br/><br/>
 
 
 ## Developer 
