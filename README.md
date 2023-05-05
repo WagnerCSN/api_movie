@@ -1,4 +1,4 @@
-<h1 align="center">API Movie</h1> 
+<h1 align="center">API MOVIE</h1> 
 
 <p><br/><br/>
    <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
@@ -36,39 +36,25 @@ API Movie is a communication interface that offers access to its functions by ot
 
 ## :arrow_forward: Deploy  
 
-![SPAUniverse](https://user-images.githubusercontent.com/119871984/231864443-7000f196-15f6-4974-823c-d1848dde4172.gif)
-
-
 ## How to run the application  
 
 In the terminal, clone the project: 
 
-```
 git clone https://github.com/WagnerCSN/api_movie
-```
 
 Install all dependencies:
 
-npm install
-```
-npm install nodemon --save-dev
-```
-npm install express --save
-```
-npm install express-async-errors --save
-```
-npm install sqlite3 sqlite --save
-```
-npm install bcryptjs --save
-```
-npm install knex --save
-```
-
+- npm install
+- npm install nodemon --save-dev
+- npm install express --save
+- npm install express-async-errors --save
+- npm install sqlite3 sqlite --save
+- npm install bcryptjs --save
+- npm install knex --save
 
 To open and run the project:
 
-npm run dev
-.<br/><br/>
+- npm run dev.<br/><br/>
 
 ## Technologies 
 
@@ -82,7 +68,7 @@ npm run dev
 - Middlewares;
 - Migrations;
 - Query Builder;
-- Knex...; <br/><br/>
+- Knex...;<br/><br/>
 
 
 ## Developer 
@@ -91,6 +77,6 @@ npm run dev
 
 ## License 
 
-Copyright : 2023 - SpaceCream
+Copyright : 2023 - API MOVIE
 
 Made with ❤️ by Wagner Costa
