@@ -42,15 +42,9 @@ In the terminal, clone the project:
 
 git clone https://github.com/WagnerCSN/api_movie
 
-Install all dependencies:
+Install all dependencies: nodemon, express, express-async-errors, sqlite3 sqlite, bcryptjs e knex.
 
 - npm install
-- npm install nodemon --save-dev
-- npm install express --save
-- npm install express-async-errors --save
-- npm install sqlite3 sqlite --save
-- npm install bcryptjs --save
-- npm install knex --save
 
 To open and run the project:
 
