@@ -1,5 +1,5 @@
 const Router = require("express");
-const notesController = require("../controllers/notesController");
+const notesController = require("../controllers/NotesController");
 const notescontroller = new notesController();
 const ensureAuthenticated = require("../middlewares/ensureAuthenticated");
 
